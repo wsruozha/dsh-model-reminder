@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Model day check",
+    "description": "A corner widget that shows the currently selected model before the first conversation of each day and stays out of the way once confirmed."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "dsh-model-reminder",
+  "version": "0.1.0",
+  "private": true,
+  "description": "每日首次对话前的模型确认挂件：角落悬浮胶囊 + 当天首次打开时自动弹出的提醒，显示当前选中的模型，确认后才收起。",
+  "type": "module",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "docs/*.png"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "widget",
+    "model",
+    "reminder"
+  ],
+  "license": "MIT"
+}

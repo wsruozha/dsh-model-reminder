@@ -1,0 +1,15 @@
+# Dependencies and build output are never committed.
+node_modules/
+dist/
+*.tgz
+
+# Local tooling / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+
+# Local secrets and machine-specific config
+.env
+.env.*

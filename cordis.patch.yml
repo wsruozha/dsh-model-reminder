@@ -1,0 +1,14 @@
+# dsh-model-reminder —— bundle patch
+#
+# 一行挂载：Host 半负责读取当前模型选择、持久化"今天已确认"的日期；
+# 浏览器半（dsh.client）把角落挂件注册进 shell.overlay。
+#
+# config 可调项：
+#   enabled: 是否启用每日提醒（false 时挂件完全不渲染）
+#   corner:  挂件位置，top-right（默认，窗口右上角）| bottom-left | bottom-right
+- insert:
+    - id: dsh-model-reminder
+      name: dsh-model-reminder
+      config:
+        enabled: true
+        corner: top-right
